@@ -8,7 +8,8 @@ openai.api_key = st.secrets.OpenAIAPI.openai_api_key
 # st.session_stateを使いメッセージのやりとりを保存
 if "messages" not in st.session_state:
     st.session_state["messages"] = [
-        {"role": "system", "content": st.secrets.AppSettings.prompt}
+        #prompt 1~3
+        {"role": "system", "content": st.secrets.AppSettings.prompt3}
 #        {"role": "system", "content": "あなたは優秀なアシスタントAIです。"}
         ]
 
@@ -33,7 +34,8 @@ def communicate():
 # ユーザーインターフェイスの構築
 st.title("My AI Assistant")
 st.write("ChatGPT APIを使ったチャットボットです。")
-st.write(st.secrets.AppSettings.prompt)
+#prompt 1~3
+st.write(st.secrets.AppSettings.prompt3)
     
 
 
