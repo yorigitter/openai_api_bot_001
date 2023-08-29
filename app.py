@@ -34,8 +34,9 @@ def communicate():
 # ユーザーインターフェイスの構築
 st.title("My AI Assistant")
 st.write("ChatGPT APIを使ったチャットボットです。")
-#prompt 1~3
-st.write(st.secrets.AppSettings.prompt3)
+
+#prompt 1~3をブラウザに表示
+#st.write(st.secrets.AppSettings.prompt3)
     
 
 
